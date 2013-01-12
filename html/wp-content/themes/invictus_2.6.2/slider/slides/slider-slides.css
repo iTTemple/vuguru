@@ -1,0 +1,41 @@
+.slides-slider {
+	padding: 0 0 25px;
+	margin: 0 -30px;
+	position: relative;
+}
+
+.slides-slider img { display: block; }
+
+.slides-slider .slide a { display: block; height: 100%; width: 100%; }
+
+/** Paginagtion **/
+.slides-slider .slidesPagination { position: absolute; bottom: 8px; left: 48%; margin: 0 auto; padding: 0; }
+.slides-slider .slidesPagination li { 
+	float: left;
+}
+.slides-slider .slidesPagination li a { 
+	display: block; 
+	float: left; 
+	width: 8px; 
+	height: 8px;
+	margin: 0 3px 0 0;
+	text-indent: -999em;
+	padding: 0;
+}
+.slides-slider .slidesPagination li.slidesCurrent a { background-position: -8px 0 }
+
+/** Nav Arrows **/
+.slides-slider a.slidesNext, .slides-slider a.slidesPrevious { 
+	position: absolute; 
+	z-index: 20;
+	bottom: 0;
+	display: block; 
+	width: 25px; 
+	height: 25px; 
+	text-indent: -999em;
+}
+
+.slides-slider a:hover, .slides-slider a:active { background-position: 0 -25px; }
+.slides-slider a.slidesPrevious { left: 0; }
+.slides-slider a.slidesNext { right: 0; background-position: -25px 0 }
+.slides-slider a.slidesNext:hover, .slides-slider a.slidesNext:active { background-position: -25px -25px; }
